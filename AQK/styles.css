@@ -1,0 +1,274 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+h1, h2, h3, h4, p, li {
+    margin: 0 0 15px 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.section-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #264653;
+    color: #fff;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+nav .nav-links li {
+    margin: 0 15px;
+}
+
+nav .nav-links a {
+    font-weight: 500;
+    color: #fff;
+}
+
+nav .cta-button {
+    padding: 10px 20px;
+    background-color: #f4a261;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    padding: 100px 20px;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/heroImage.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(38, 70, 83, 0.7);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.hero-button {
+    padding: 15px 30px;
+    background-color: #e76f51;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.hero-button:hover {
+    background-color: #f4a261;
+}
+
+/* Adventures Section */
+.adventures .adventure-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.adventure-item {
+    width: 300px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.adventure-item:hover {
+    transform: scale(1.05);
+}
+
+.adventure-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Section Styling */
+section {
+    padding: 60px 20px;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #264653;
+}
+
+/* Contact Form */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form input[type="submit"] {
+    background-color: #2a9d8f;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #264653;
+}
+
+/* Footer */
+footer {
+    background-color: #264653;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    color: #fff;
+}
+
+/* Boxed Sections */
+.boxed-section {
+    background-color: #f1f1f1; /* Light background for contrast */
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Team Container for our staff bios */
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.team-member {
+    width: 300px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+/* General adjustments for the About Us page */
+h1, h2 {
+    color: #264653;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p, li {
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Collapsible FAQ Button */
+.collapsible {
+    background-color: #264653;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.collapsible:hover {
+    background-color: #2a9d8f;
+}
+
+.collapsible.active {
+    background-color: #2a9d8f;
+}
+
+/* Collapsible content */
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}

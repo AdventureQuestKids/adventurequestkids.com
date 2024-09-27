@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FAQ | AdventureQuest Kids</title>
+    <meta name="description" content="Find answers to common questions about AdventureQuest Kids' LARPing adventures, safety, bookings, and more.">
+    <meta name="keywords" content="FAQ, AdventureQuest Kids, LARP, safety, bookings, weather policy, accessibility">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">AdventureQuest Kids</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="educational-resources.html">Educational Resources</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="safetySec.html">Safety and Security</a></li>
+            <li><a href="bookingAndReg.html">Booking and Registration</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <a href="index.html#book-now" class="cta-button">Book Now</a>
+    </nav>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="section-wrapper">
+            <h1>Frequently Asked Questions</h1>
+
+            <!-- Adventure Logistics Section -->
+            <button class="collapsible">Adventure Logistics</button>
+            <div class="content">
+                <p><strong>What should kids bring to the adventure?</strong></p>
+                <ul>
+                    <li>Comfortable hiking shoes</li>
+                    <li>Sunscreen and a hat</li>
+                    <li>A water bottle</li>
+                    <li>Weather-appropriate clothing</li>
+                </ul>
+                <p><strong>What’s provided by AdventureQuest Kids?</strong></p>
+                <p>We provide snacks, all necessary LARPing gear, and materials for educational activities.</p>
+                <p><strong>How long does the adventure last?</strong></p>
+                <p>Each adventure lasts about 3 hours, including breaks.</p>
+            </div>
+
+            <!-- Safety Concerns Section -->
+            <button class="collapsible">Safety Concerns</button>
+            <div class="content">
+                <p><strong>How does AdventureQuest Kids ensure safety?</strong></p>
+                <p>Safety is our top priority. All of our foam weapons are regularly inspected, and staff is trained in first aid.</p>
+                <p><strong>What happens in case of an emergency?</strong></p>
+                <p>We have emergency procedures in place and carry mobile phones to contact emergency services if necessary.</p>
+                <p><strong>Are the staff qualified?</strong></p>
+                <p>Our staff are outdoor educators and certified in child safety and first aid.</p>
+            </div>
+
+            <!-- Booking & Payments Section -->
+            <button class="collapsible">Booking & Payments</button>
+            <div class="content">
+                <p><strong>How do I book an adventure?</strong></p>
+                <p>You can book through our <a href="index.html#book-now">online form</a>. We’ll confirm via email.</p>
+                <p><strong>Do you offer group rates?</strong></p>
+                <p>Yes, we offer group rates for schools, scout groups, and parties.</p>
+                <p><strong>What’s your refund policy?</strong></p>
+                <p>Cancellations made 7 days in advance are eligible for a full refund. Late cancellations get a 50% refund.</p>
+            </div>
+
+            <!-- Special Needs and Accessibility Section -->
+            <button class="collapsible">Special Needs and Accessibility</button>
+            <div class="content">
+                <p><strong>Are the adventures accessible for children with physical or dietary needs?</strong></p>
+                <p>Yes, we work with parents to accommodate any physical or dietary needs. Please inform us in advance.</p>
+                <p><strong>Are there non-combat roles for children who prefer not to engage in battles?</strong></p>
+                <p>Yes, non-combat roles such as strategists or medics are available for kids who prefer a different role.</p>
+            </div>
+
+            <!-- Weather Policy Section -->
+            <button class="collapsible">Weather Policy</button>
+            <div class="content">
+                <p><strong>What happens if it rains or there's extreme heat?</strong></p>
+                <p>If there are unsafe weather conditions, we will reschedule the adventure. You can choose to reschedule or receive a full refund.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 AdventureQuest Kids. All rights reserved.</p>
+        <p><a href="privacy-policy.html">Privacy Policy</a> | <a href="terms.html">Terms and Conditions</a></p>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+
+    <!-- Inline JavaScript for Collapsible FAQ Functionality -->
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+</body>
+</html>
